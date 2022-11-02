@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>index.</title>
+    <style>
+        .carousel-inner {
+            height: 90vh;
+        }
+
+        .service {
+            height: 90vh;
+            /* height: 100%; */
+            /* border: 1px solid red; */
+        }
+
+
+
+        .card-img-top {
+            /* border: 1px solid yellow !important; */
+            height: 15rem !important;
+        }
+
+        .about {
+            height: 50vh;
+            /* border: 1px solid red; */
+        }
+
+        .footer {
+            height: 15vh;
+        }
+
+        .cardbody {
+            /* border: 1px solid blue; */
+            box-shadow: 10px 10px 15px gray;
+            transition: all ease 0.5s;
+        }
+
+        .cardbody:hover {
+            rotate: 8deg;
+            cursor: pointer;
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 1000;
+            width: 100vw;
+
+        }
+
+        .container{
+            height: 100% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1 class="text-danger border border-white">A and D</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+    <!-- carosoal starst -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/project02/imgs/laptop-3091427_1280.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/project02/imgs/space-19070_1280.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/project02/imgs/devops-3155973_1280.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <!-- carosoal ends -->
+    <!-- service section start -->
+    <div class="container service" id="service">
+        <h1 class="text-center my-5">Service</h1>
+        <div class="row servicerow">
+            <div class="col">
+                <div class="card cardbody" style="width: 18rem;">
+                    <img src="/project02/imgs/front end.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Front End</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card cardbody" style="width: 18rem;">
+                    <img src="/project02/imgs/back ends.webp" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Back End</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card cardbody" style="width: 18rem;">
+                    <img src="/project02/imgs/fullstak.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fulls Stack</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- service section start -->
+    <!-- about stast -->
+    <div class="container about" id="about">
+        <h1 class="text-center my-5">About</h1>
+        <h1 class="text-primary">FeliX IT`s</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, fugiat, eius possimus, quam ratione
+            magnam beatae autem repudiandae dolorem reprehenderit nostrum optio maiores dolore temporibus itaque rerum
+            animi quia perferendis explicabo. Nesciunt culpa, aut expedita, fuga quasi fugit quo voluptatem est
+            veritatis dolor itaque! Dolor explicabo veniam odit, porro iste perferendis expedita error eligendi fuga,
+            voluptatum eius, praesentium facere reiciendis doloribus minus dolorum cupiditate. Eaque molestiae nostrum
+            sunt eius voluptatem quibusdam similique voluptates earum temporibus tempora obcaecati ipsum, labore officia
+            dignissimos maxime dolorem commodi architecto aliquam praesentium? Inventore optio facilis corrupti repellat
+            assumenda odio accusantium tempora eligendi porro animi!</p>
+    </div>
+    <!-- about stast -->
+    <!-- contact section start -->
+    <div class="container" id="contact">
+        <h1 class="text-center my-5">Contact</h1>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+    </div>
+    <br><br>
+    <footer>
+
+        <p class="footer bg-dark text-white text-center py-5"> Copy rights &copy; </p>
+    </footer>
+
+
+
+
+
+
+    <!-- contact section start -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
